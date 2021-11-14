@@ -140,7 +140,7 @@
 
 	.header__main {
 		padding: 10px 30px;
-		height: 70px;
+		height: 75px;
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -170,7 +170,7 @@
 	.header__logo {
 		position: fixed;
 		left: 30px;
-		top: 8px;
+		top: 13px;
 		z-index: 10;
 		width: 118px;
 	}
