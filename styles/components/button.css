@@ -43,6 +43,7 @@
 
 @media (max-width: 768px) {
 	.button {
+		box-shadow: var(--box-shadow-mobile);
 		padding: 3px 21px;
 		font-size: 13px;
 		line-height: 15px;

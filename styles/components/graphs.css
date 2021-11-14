@@ -55,6 +55,7 @@
 
 @media (max-width: 768px) {
 	.graph-wrapper--with-shadow {
+		box-shadow: var(--box-shadow-mobile);
 		padding: 20px 40px 40px;
 	}
 
