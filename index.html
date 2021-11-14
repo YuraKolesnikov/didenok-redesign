@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/vars.css">
+  <link rel="stylesheet" href="./styles/common/fonts.css">
+  <link rel="stylesheet" href="./styles/common/grid.css">
+  <link rel="stylesheet" href="./styles/common/page.css">
+  <link rel="stylesheet" href="./styles/components/logo.css">
+  <link rel="stylesheet" href="./styles/components/button-group.css">
+  <link rel="stylesheet" href="./styles/components/button.css">
+  <link rel="stylesheet" href="./styles/components/dropdown.css">
+  <link rel="stylesheet" href="./styles/components/footer.css">
+  <link rel="stylesheet" href="./styles/components/hamburger.css">
+  <link rel="stylesheet" href="./styles/components/header.css">
+  <link rel="stylesheet" href="./styles/components/top-post-card.css">
+  <link rel="stylesheet" href="./styles/components/top-post-card-grid.css">
+  <link rel="stylesheet" href="./styles/components/stats-card.css">
+  <link rel="stylesheet" href="./styles/components/info-section.css">
+  <link rel="stylesheet" href="./styles/components/title.css">
+</head>
+<body class="body">
+  <header class="header">
+    <div class="header__main">
+      <a class="js-logo" href="#">
+        <svg class="logo header__logo">
+          <use xlink:href="./assets/icons.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="header__navbar js-navbar">
+        <ul class="header__nav">
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--active" href="#">
+              Youtube статистика
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">
+              Instagram статистика
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">
+              Все блогеры
+            </a>
+          </li>
+        </ul>
+        <div class="header__nav-item--dropdown dropdown">
+          <button class="dropdown__trigger js-dropdown-trigger">
+            Андрей Айзенбарт
+            <span class="dropdown__icon">
+              <svg class="icon">
+                <use xlink:href="./assets/icons.svg#arrow"></use>
+              </svg>
+            </span>
+          </button>
+          <ul class="dropdown__content js-dropdown-content">
+            <li class="dropdown__item">
+              <a href="#">Выйти</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__hamburger hamburger">
+        <input type="checkbox" name="hamburger" id="hamburger" class="hamburger__input js-hamburger">
+        <label class="hamburger__button" for="hamburger">
+          <span></span>
+        </label>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    
+  </main>
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__left">
+        <svg class="logo footer__logo">
+          <use xlink:href="./assets/icons.svg#logo"></use>
+        </svg>
+        <p class="footer__rights-protected">
+          ООО «Диденок Тим», 2020, Москва
+          <br/>Все права защищены
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./scripts/dropdown.js"></script>
+  <script src="./scripts/hamburger.js"></script>
+</body>
+</html>

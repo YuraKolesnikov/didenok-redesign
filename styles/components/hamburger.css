@@ -1,0 +1,60 @@
+.hamburger {
+	display: none;
+}
+
+.hamburger__input {
+  opacity: 0;
+}
+
+.hamburger__input:checked ~ .hamburger__button > span {
+  transform: rotate(45deg);
+}
+
+.hamburger__input:checked ~ .hamburger__button > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+.hamburger__input:checked ~ .hamburger__button > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.hamburger__button {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  top: 20px;
+  right: 30px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.hamburger__button > span,
+.hamburger__button > span::before,
+.hamburger__button > span::after {
+  background-color: var(--dark-blue);
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  transition-duration: .25s;
+}
+
+.hamburger__button > span::before {
+  content: '';
+  top: -8px;
+}
+
+.hamburger__button > span::after {
+  content: '';
+  top: 8px;
+}
+
+@media (max-width: 992px) {
+	.hamburger {
+		display: block;
+	}
+}

@@ -1,0 +1,22 @@
+.button-group {
+	display: flex;
+	align-items: center;
+}
+
+.button-group__item {
+	margin-left: 24px;
+}
+
+.button-group__item:first-child {
+	margin-left: 0;
+}
+
+@media (max-width: 768px) {
+	.button-group__item {
+		margin-left: 16px;
+	}
+
+	.button-group__item:first-child {
+		margin-left: 0;
+	}
+}

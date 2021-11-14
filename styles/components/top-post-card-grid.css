@@ -1,0 +1,16 @@
+.top-post-card-grid {
+	max-width: 1080px;
+	width: 100%;
+	margin: auto;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, 299px);
+	grid-gap: 68px;
+}
+
+@media (max-width: 992px) {
+	.top-post-card-grid {
+		grid-template-columns: repeat(auto-fit, 239px);
+		grid-gap: 20px;
+	}
+}
