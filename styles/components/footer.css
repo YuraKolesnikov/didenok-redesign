@@ -23,8 +23,8 @@
 
 .footer__rights-protected {
 	color: var(--text);
+	font-family: var(--font-primary);
 	margin: 0;
-	font-weight: 500;
 	font-size: 12px;
 	line-height: 15px;
 }

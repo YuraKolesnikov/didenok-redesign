@@ -4,6 +4,7 @@
 
 .dropdown__trigger {
 	color: var(--text-dark);
+	font-family: var(--font-primary-bold);
 	cursor: pointer;
 	background-color: transparent;
 	font-weight: 600;
@@ -33,6 +34,7 @@
 
 .dropdown__content {
 	background-color: var(--white);
+	font-family: var(--font-primary);
 	display: none;
 	position: absolute;
 	width: 170px;

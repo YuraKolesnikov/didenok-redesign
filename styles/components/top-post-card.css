@@ -40,12 +40,14 @@
 }
 
 .top-post-card__stats-name {
+	font-family: var(--font-primary);
 	color: #FFFFFF;
 	font-size: 14px;
 	line-height: 14px;
 }
 
 .top-post-card__stats-number {
+	font-family: var(--font-secondary);
 	color: var(--dark-blue);
 	font-size: 30px;
 	line-height: 38px;

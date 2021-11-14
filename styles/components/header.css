@@ -39,10 +39,10 @@
 
 .header__nav-link {
 	color: var(--gray-light);
+	font-family: var(--font-primary);
 	position: relative;
 	text-decoration: none;
 	padding: 23px 0;
-	font-weight: 600;
 	font-size: 18px;
 }
 
@@ -65,13 +65,7 @@
 
 .header__nav-link--active {
 	color: var(--dark-blue);
-	font-weight: 600;
-}
-
-.header__nav-item--dropdown {
-	font-weight: 600;
-	font-size: 14px;
-	line-height: 30px;
+	font-family: var(--font-primary-bold);
 }
 
 .header__logo {
