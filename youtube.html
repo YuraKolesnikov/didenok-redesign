@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Youtube</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/vars.css">
+  <link rel="stylesheet" href="./styles/common/fonts.css">
+  <link rel="stylesheet" href="./styles/common/grid.css">
+  <link rel="stylesheet" href="./styles/common/page.css">
+  <link rel="stylesheet" href="./styles/common/section.css">
+  <link rel="stylesheet" href="./styles/components/logo.css">
+  <link rel="stylesheet" href="./styles/components/button-group.css">
+  <link rel="stylesheet" href="./styles/components/button.css">
+  <link rel="stylesheet" href="./styles/components/dropdown.css">
+  <link rel="stylesheet" href="./styles/components/footer.css">
+  <link rel="stylesheet" href="./styles/components/hamburger.css">
+  <link rel="stylesheet" href="./styles/components/header.css">
+  <link rel="stylesheet" href="./styles/components/top-post-card.css">
+  <link rel="stylesheet" href="./styles/components/top-post-card-grid.css">
+  <link rel="stylesheet" href="./styles/components/stats-card.css">
+  <link rel="stylesheet" href="./styles/components/info-section.css">
+  <link rel="stylesheet" href="./styles/components/graphs.css">
+  <link rel="stylesheet" href="./styles/components/table.css">
+  <link rel="stylesheet" href="./styles/pages/instagram.css">
+  <link rel="stylesheet" href="./styles/pages/youtube.css">
+</head>
+<body class="body">
+  <header class="header">
+    <div class="header__main">
+      <a class="js-logo" href="#">
+        <svg class="logo header__logo">
+          <use xlink:href="./assets/icons.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="header__navbar js-navbar">
+        <ul class="header__nav">
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--active" href="#">
+              Youtube статистика
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="instagram.html">
+              Instagram статистика
+            </a>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <button class="header__nav-item--dropdown dropdown__trigger js-dropdown-trigger">
+            Андрей Айзенбарт
+            <span class="dropdown__icon">
+              <svg class="icon">
+                <use xlink:href="./assets/icons.svg#arrow"></use>
+              </svg>
+            </span>
+          </button>
+          <ul class="dropdown__content js-dropdown-content">
+            <li class="dropdown__item">
+              <a href="#">Выйти</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__hamburger hamburger">
+        <input type="checkbox" name="hamburger" id="hamburger" class="hamburger__input js-hamburger">
+        <label class="hamburger__button" for="hamburger">
+          <span></span>
+        </label>
+      </div>
+    </div>
+  </header>
+  <main class="main page-youtube">
+    <section class="info-section">
+      <div class="info-section__left">
+        <div class="info-section__left-top">
+          <div class="info-section__avatar"></div>
+          <p class="info-section__last-updated">Обновлено 25 ноября в 20:15</p>
+        </div>
+        <div class="info-section__left-bottom">
+          <p class="info-section__name">Влад Бумага</p>
+          <button class="button button--accent-2-inverse info-section__button">Перейти на канал</button>
+        </div>
+      </div>
+      <div class="info-section__right">
+        <div class="info-section__title">
+          <span class="large">Youtube</span>статистика
+        </div>
+          <div class="info-section__stats">
+            <div class="stats-card">
+              <div class="stats-card__icon-wrapper">
+                <svg class="stats-card__icon">
+                  <use xlink:href="./assets/icons.svg#subs"></use>
+                </svg>
+              </div>
+              <div class="stats-card__main">
+                <span class="stats-card__number">999 999 999</span>
+                <span class="stats-card__text">кол-во подписчиков</span>
+              </div>
+            </div>
+            <div class="stats-card">
+              <div class="stats-card__icon-wrapper">
+                <svg class ="stats-card__icon">
+                  <use xlink:href="./assets/icons.svg#category"></use>
+                </svg>
+              </div>
+              <div class="stats-card__main">
+                <span class="stats-card__number">юмор, лайфстайл</span>
+                <span class="stats-card__text">категории</span>
+              </div>
+            </div>
+            <div class="stats-card">
+              <div class="stats-card__icon-wrapper">
+                <svg class="stats-card__icon">
+                  <use xlink:href="./assets/icons.svg#views"></use>
+                </svg>
+              </div>
+              <div class="stats-card__main">
+                <span class="stats-card__number">999 999 999</span>
+                <span class="stats-card__text">среднее кол-во просмотров</span>
+              </div>
+            </div>
+            <div class="stats-card">
+              <div class="stats-card__icon-wrapper">
+                <svg class="stats-card__icon">
+                  <use xlink:href="./assets/icons.svg#comments"></use>
+                </svg>
+              </div>
+              <div class="stats-card__main">
+                <span class="stats-card__number">999 999 999</span>
+                <span class="stats-card__text">среднее кол-во комментариев</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--with-table">
+      <div class="section__head">
+        <h3 class="section__title">География</h3>
+        <p class="section__caption">Таблица содержит подробные данные о вовлеченности аудитории в разрезе 5 крупных стран</p>
+      </div>
+      <div class="section__main">
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <th class="table__head-cell">
+                <button class="button button--secondary">
+                  Страна
+                </button>
+              </th>
+              <th class="table__head-cell">
+                <button class="button button--secondary">
+                  Доля
+                </button>
+              </th>
+              <th class="table__head-cell">
+                <button class="button button--secondary">
+                  Кол-во просмотров
+                </button>
+              </th>
+              <th class="table__head-cell">
+                <button class="button button--secondary">
+                  Средний просмотр
+                </button>
+              </th>
+              <th class="table__head-cell">
+                <button class="button button--secondary">
+                  Время просмотра
+                </button>
+              </th>
+            </thead>
+            <tbody>
+              <tr class="table__row table__row--highlighted">
+                <td class="table__cell">Россия</td>
+                <td class="table__cell">45%</td>
+                <td class="table__cell">999 999 999</td>
+                <td class="table__cell">13:11</td>
+                <td class="table__cell">999 999 999</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">США</td>
+                <td class="table__cell">45%</td>
+                <td class="table__cell">999 999 999</td>
+                <td class="table__cell">13:11</td>
+                <td class="table__cell">999 999 999</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section__head">
+        <h3 class="section__title">Подписки/отписки</h3>
+        <p class="section__caption">График отображает увеличение/уменьшение количества подписчиков за конкретный период</p>
+        <div class="section__button-wrapper button-group">
+          <button class="button button--accent-2 button-group__item">Месяц</button>
+          <button class="button button--accent-2 button-group__item">Год</button>
+          <button class="button button--accent-2 button-group__item">Все время</button>
+        </div>
+      </div>
+      <div class="section__main">
+        <div class="graph-wrapper graph-wrapper--with-shadow">
+          <div class="graph-custom-legend graph-custom-legend--follow-unfollow">
+            <div class="graph-custom-legend__item">
+              <div class="graph-custom-legend__circle accent-2"></div>
+              <span>подписки</span>
+            </div>
+            <div class="graph-custom-legend__item">
+              <div class="graph-custom-legend__circle black"></div>
+              <span>отписки</span>
+            </div>
+          </div>
+          <canvas id="follow_unfollow"></canvas>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section__head">
+        <h3 class="section__title">Динамика аудитории</h3>
+        <p class="section__caption">График иллюстрирует увеличение/уменьшение аудитории за конкретный период</p>
+        <div class="section__button-wrapper button-group">
+          <button class="button button--accent-2 button-group__item">Месяц</button>
+          <button class="button button--accent-2 button-group__item">Год</button>
+          <button class="button button--accent-2 button-group__item">Все время</button>
+        </div>
+      </div>
+      <div class="section__main">
+        <div class="graph-wrapper graph-wrapper--with-shadow">
+          <canvas id="dynamic"></canvas>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section__head">
+        <h3 class="section__title">Активность аудитории</h3>
+        <p class="section__caption">График отображает суммарное количество лайков/дизлайков за конкретный период</p>
+        <div class="section__button-wrapper button-group">
+          <button class="button button--accent-2 button-group__item">Неделя</button>
+          <button class="button button--accent-2 button-group__item">Месяц</button>
+          <button class="button button--accent-2 button-group__item">Год</button>
+        </div>
+      </div>
+      <div class="section__main">
+        <div class="graph-wrapper graph-wrapper--with-shadow">
+          <canvas id="activity"></canvas>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section__head">
+        <h3 class="section__title">Количество просмотров</h3>
+        <p class="section__caption">График иллюстрирует суммарное количество просмотров за конкретный период</p>
+        <div class="section__button-wrapper button-group">
+          <button class="button button--accent-2 button-group__item">Месяц</button>
+          <button class="button button--accent-2 button-group__item">Год</button>
+          <button class="button button--accent-2 button-group__item">Все время</button>
+        </div>
+      </div>
+      <div class="section__main">
+        <div class="graph-wrapper graph-wrapper--with-shadow">
+          <canvas id="views"></canvas>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__left">
+        <svg class="logo footer__logo">
+          <use xlink:href="./assets/icons.svg#logo"></use>
+        </svg>
+        <p class="footer__rights-protected">
+          ООО «Диденок Тим», 2020, Москва
+          <br/>Все права защищены
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+  <script src="./scripts/graphs/variables_and_init.js"></script>
+  <script src="./scripts/graphs/youtube/follow_unfollow.js"></script>
+  <script src="./scripts/graphs/youtube/dynamic.js"></script>
+  <script src="./scripts/graphs/youtube/activity.js"></script>
+  <script src="./scripts/graphs/youtube/views.js"></script>
+  <script src="./scripts/dropdown.js"></script>
+  <script src="./scripts/hamburger.js"></script>
+</body>
+</html>
