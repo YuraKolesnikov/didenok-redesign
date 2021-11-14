@@ -1,0 +1,8 @@
+.page-instagram {
+	--main-color: var(--accent-1);
+}
+
+.page-instagram .info-section {
+	--accent-color: var(--main-color);
+	--avatar-bg: url('/assets/instagram.svg');
+}

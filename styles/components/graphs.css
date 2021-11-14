@@ -1,0 +1,10 @@
+.graph-wrapper {
+	max-width: 976px;
+	margin: auto;
+}
+
+.graph-wrapper--with-shadow {
+	box-shadow: var(--box-shadow);
+	padding: 60px;
+	border-radius: 40px;
+}

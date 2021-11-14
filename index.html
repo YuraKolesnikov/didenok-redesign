@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./styles/common/fonts.css">
   <link rel="stylesheet" href="./styles/common/grid.css">
   <link rel="stylesheet" href="./styles/common/page.css">
+  <link rel="stylesheet" href="./styles/common/section.css">
   <link rel="stylesheet" href="./styles/components/logo.css">
   <link rel="stylesheet" href="./styles/components/button-group.css">
   <link rel="stylesheet" href="./styles/components/button.css">
@@ -25,7 +26,9 @@
   <link rel="stylesheet" href="./styles/components/top-post-card-grid.css">
   <link rel="stylesheet" href="./styles/components/stats-card.css">
   <link rel="stylesheet" href="./styles/components/info-section.css">
-  <link rel="stylesheet" href="./styles/components/title.css">
+  <link rel="stylesheet" href="./styles/components/graphs.css">
+  <link rel="stylesheet" href="./styles/pages/instagram.css">
+  <link rel="stylesheet" href="./styles/pages/youtube.css">
 </head>
 <body class="body">
   <header class="header">
@@ -77,8 +80,135 @@
       </div>
     </div>
   </header>
-  <main class="main">
-    
+  <main class="main page-instagram">
+    <section class="info-section">
+      <div class="info-section__left">
+        <div class="info-section__avatar">
+
+        </div>
+        <p class="info-section__last-updated">Обновлено 25 ноября в 20:15</p>
+        <p class="info-section__name">Влад Бумага</p>
+        <button class="button button--accent-1-inverse button--sm">Перейти на канал</button>
+      </div>
+      <div class="info-section__right">
+        <div class="info-section__title">
+          <span class="large">Instagram</span>статистика
+          <div class="info-section__stats">
+            <div class="stats-card">
+              <div class="stats-card__icon-wrapper">
+                <svg class="stats-card__icon">
+                  <use xlink:href="./assets/icons.svg#subs"></use>
+                </svg>
+              </div>
+              <div class="stats-card__main">
+                <span class="stats-card__number">999 999 999</span>
+                <span class="stats-card__text">кол-во подписчиков</span>
+              </div>
+            </div>
+            <div class="stats-card">
+              <div class="stats-card__icon-wrapper">
+                <svg class="stats-card__icon">
+                  <use xlink:href="./assets/icons.svg#category"></use>
+                </svg>
+              </div>
+              <div class="stats-card__main">
+                <span class="stats-card__number">юмор, лайфстайл</span>
+                <span class="stats-card__text">категории</span>
+              </div>
+            </div>
+            <div class="stats-card">
+              <div class="stats-card__icon-wrapper">
+                <svg class="stats-card__icon">
+                  <use xlink:href="./assets/icons.svg#views"></use>
+                </svg>
+              </div>
+              <div class="stats-card__main">
+                <span class="stats-card__number">999 999 999</span>
+                <span class="stats-card__text">среднее кол-во просмотров</span>
+              </div>
+            </div>
+            <div class="stats-card">
+              <div class="stats-card__icon-wrapper">
+                <svg class="stats-card__icon">
+                  <use xlink:href="./assets/icons.svg#comments"></use>
+                </svg>
+              </div>
+              <div class="stats-card__main">
+                <span class="stats-card__number">999 999 999</span>
+                <span class="stats-card__text">среднее кол-во комментариев</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section__head">
+        <h3 class="section__title">Активность аудитории</h3>
+        <p class="section__caption">График отображает суммарное количество лайков/дизлайков за конкретный период</p>
+        <div class="section__button-wrapper button-group">
+          <button class="button button--accent-1 button-group__item">Неделя</button>
+          <button class="button button--accent-1 button-group__item">Месяц</button>
+          <button class="button button--accent-1 button-group__item">Год</button>
+        </div>
+      </div>
+      <div class="section__main">
+        <div class="graph-wrapper graph-wrapper--with-shadow">
+          <canvas id="activity"></canvas>
+        </div>
+      </div>
+    </section>
+    <div class="graph-wrapper">
+      <canvas id="demo"></canvas>
+    </div>
+    <section class="section">
+      <div class="section__head">
+        <h3 class="section__title">Динамика аудитории</h3>
+        <p class="section__caption">График иллюстрирует увеличение/уменьшение аудитории за конкретный период</p>
+        <div class="section__button-wrapper button-group">
+          <button class="button button--accent-1 button-group__item">Месяц</button>
+          <button class="button button--accent-1 button-group__item">Год</button>
+          <button class="button button--accent-1 button-group__item">Все время</button>
+        </div>
+      </div>
+      <div class="section__main">
+        <div class="graph-wrapper graph-wrapper--with-shadow">
+          <canvas id="dynamic"></canvas>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section__head">
+        <h3 class="section__title">Подписки/отписки</h3>
+        <p class="section__caption">График отображает увеличение/уменьшение количества подписчиков за конкретный период</p>
+        <div class="section__button-wrapper button-group">
+          <button class="button button--accent-1 button-group__item">Месяц</button>
+          <button class="button button--accent-1 button-group__item">Год</button>
+          <button class="button button--accent-1 button-group__item">Все время</button>
+        </div>
+      </div>
+      <div class="section__main">
+        <div class="graph-wrapper graph-wrapper--with-shadow">
+          <canvas id="follow_unfollow"></canvas>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section__head">
+        <h3 class="section__title">Количество просмотров</h3>
+        <p class="section__caption">График иллюстрирует суммарное количество просмотров за конкретный период</p>
+        <div class="section__button-wrapper button-group">
+          <button class="button button--accent-1 button-group__item">Месяц</button>
+          <button class="button button--accent-1 button-group__item">Год</button>
+          <button class="button button--accent-1 button-group__item">Все время</button>
+        </div>
+      </div>
+      <div class="section__main">
+        <div class="graph-wrapper graph-wrapper--with-shadow">
+          <canvas id="views"></canvas>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__main">
@@ -93,6 +223,13 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+  <script src="./scripts/graphs/variables_and_init.js"></script>
+  <script src="./scripts/graphs/youtube/activity.js"></script>
+  <script src="./scripts/graphs/youtube/demo.js"></script>
+  <script src="./scripts/graphs/youtube/dynamic.js"></script>
+  <script src="./scripts/graphs/youtube/follow_unfollow.js"></script>
+  <script src="./scripts/graphs/youtube/views.js"></script>
   <script src="./scripts/dropdown.js"></script>
   <script src="./scripts/hamburger.js"></script>
 </body>

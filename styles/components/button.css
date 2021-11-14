@@ -9,19 +9,36 @@
 	cursor: pointer;
 }
 
-.button--primary {
+.button--accent-1 {
 	background-color: var(--accent-1);
 	color: #FFFFFF;
 }
 
-.button--secondary {
+.button--accent-1-inverse {
+	font-family: var(--font-primary-bold);
 	color: var(--accent-1);
 	background-color: #FFFFFF;
 }
 
-.button--tertiary {
+.button--accent-2 {
+	background-color: var(--accent-2);
+	color: #FFFFFF;
+}
+
+.button--accent-2-inverse {
+	font-family: var(--font-primary-bold);
+	color: var(--accent-2);
+	background-color: #FFFFFF;
+}
+
+.button--secondary {
 	color: var(--gray);
 	background-color: #FFFFFF;
+}
+
+.button--sm {
+	font-size: 14px;
+	line-height: 17px;
 }
 
 @media (max-width: 768px) {

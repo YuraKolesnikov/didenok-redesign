@@ -1,0 +1,8 @@
+.page-youtube {
+	--main-color: var(--accent-2);
+}
+
+.page-youtube .info-section {
+	--accent-color: var(--main-color);
+	--avatar-bg: url('/assets/youtube.svg');
+}

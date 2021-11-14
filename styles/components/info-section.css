@@ -1,28 +1,46 @@
 .info-section {
-	max-width: 976px;
+	--accent-color: var(--accent-1);
+	--avatar-bg: url('/assets/youtube.svg');
+	font-family: var(--font-secondary);
+	max-width: 1080px;
 	margin: auto;
 	display: flex;
 	align-items: flex-start;
-	border: 1px solid teal;
+	border: 1px solid var(--accent-color);
 }
 
 .info-section__left {
-	margin-right: 100px;
+	margin-right: 80px;
 	display: flex;
 	flex-flow: column;
 	align-items: flex-end;
 }
 
+.info-section__right {
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+}
+
 .info-section__avatar {
-	background-color: var(--accent-1);
 	box-shadow: var(--box-shadow);
+	background-image: var(--avatar-bg);
+	border: 1px solid teal;
+	background-position: center;
+	background-repeat: no-repeat;
 	height: 330px;
 	width: 330px;
 	margin-bottom: 20px;
 	border-radius: 40px;
+	position: relative;
+}
+
+.info-section__avatar img {
+	border: 1px solid tomato;
 }
 
 .info-section__last-updated {
+	font-family: var(--font-primary);
 	color: var(--gray);
 	margin-bottom: 34px;
 	font-size: 12px;
@@ -48,4 +66,15 @@
 .info-section__title .large {
 	font-size: 160px;
 	margin-right: 7px;
+}
+
+.info-section__stats {
+	margin-top: 80px;
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.info-section__stats .stats-card {
+	--theme-color: var(--accent-color);
 }
