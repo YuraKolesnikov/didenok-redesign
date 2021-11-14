@@ -1,6 +1,7 @@
 .graph-wrapper {
 	max-width: 976px;
 	margin: auto;
+	position: relative;
 }
 
 .graph-wrapper--with-shadow {
@@ -51,6 +52,24 @@
 
 .graph-custom-legend__circle.black {
 	background-color: var(--dark-blue);
+}
+
+.graph-values {
+	color: var(--dark-blue);
+  box-shadow: var(--box-shadow);
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 70px 0;
+  border-radius: 60px;
+  width: 51px;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 @media (max-width: 768px) {

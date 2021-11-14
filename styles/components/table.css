@@ -1,0 +1,38 @@
+.table {
+	font-family: var(--font-secondary);
+	margin: auto;
+}
+
+.table__head-cell {
+	padding: 10px 25px;
+}
+
+.table__row {
+
+}
+
+.table__row--highlighted {
+	color: var(--accent-2);
+}
+
+.table__cell {
+	text-align: center;
+  vertical-align: middle;
+	font-size: 40px;
+	line-height: 48px;
+	text-transform: uppercase;
+	padding: 25px 0;
+}
+
+@media (max-width: 768px) {
+	.table-wrapper {
+		overflow-x: scroll;
+		max-width: 100%;
+	}
+
+	.table__cell {
+		font-size: 18px;
+		line-height: 23px;
+		padding: 10px 0;
+	}
+}

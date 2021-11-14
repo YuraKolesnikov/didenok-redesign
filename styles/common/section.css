@@ -2,6 +2,10 @@
 	padding: 60px 35px;
 }
 
+.section--with-table {
+	padding-right: 0 !important;
+}
+
 .section__head {
 	display: flex;
 	flex-flow: column;
