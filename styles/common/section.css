@@ -1,5 +1,5 @@
 .section {
-	padding: 60px 0;
+	padding: 60px 35px;
 }
 
 .section__head {
@@ -34,6 +34,12 @@
 
 .section__main {
 	margin-top: 70px;
+}
+
+@media (max-width: 992px) {
+	.section {
+		padding: 40px 35px;
+	}
 }
 
 @media (max-width: 768px) {
