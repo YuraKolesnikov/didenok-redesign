@@ -81,70 +81,7 @@
     </div>
   </header>
   <main class="main page-instagram">
-    <section class="info-section">
-      <div class="info-section__left">
-        <div class="info-section__left-top">
-          <div class="info-section__avatar"></div>
-          <p class="info-section__last-updated">Обновлено 25 ноября в 20:15</p>
-        </div>
-        <div class="info-section__left-bottom">
-          <p class="info-section__name">Влад Бумага</p>
-          <button class="button button--accent-1-inverse info-section__button">Перейти на канал</button>
-        </div>
-      </div>
-      <div class="info-section__right">
-        <div class="info-section__title">
-          <span class="large">Instagram</span>статистика
-        </div>
-          <div class="info-section__stats">
-            <div class="stats-card">
-              <div class="stats-card__icon-wrapper">
-                <svg class="stats-card__icon">
-                  <use xlink:href="./assets/icons.svg#subs"></use>
-                </svg>
-              </div>
-              <div class="stats-card__main">
-                <span class="stats-card__number">999 999 999</span>
-                <span class="stats-card__text">кол-во подписчиков</span>
-              </div>
-            </div>
-            <div class="stats-card">
-              <div class="stats-card__icon-wrapper">
-                <svg class ="stats-card__icon">
-                  <use xlink:href="./assets/icons.svg#category"></use>
-                </svg>
-              </div>
-              <div class="stats-card__main">
-                <span class="stats-card__number">юмор, лайфстайл</span>
-                <span class="stats-card__text">категории</span>
-              </div>
-            </div>
-            <div class="stats-card">
-              <div class="stats-card__icon-wrapper">
-                <svg class="stats-card__icon">
-                  <use xlink:href="./assets/icons.svg#views"></use>
-                </svg>
-              </div>
-              <div class="stats-card__main">
-                <span class="stats-card__number">999 999 999</span>
-                <span class="stats-card__text">среднее кол-во просмотров</span>
-              </div>
-            </div>
-            <div class="stats-card">
-              <div class="stats-card__icon-wrapper">
-                <svg class="stats-card__icon">
-                  <use xlink:href="./assets/icons.svg#comments"></use>
-                </svg>
-              </div>
-              <div class="stats-card__main">
-                <span class="stats-card__number">999 999 999</span>
-                <span class="stats-card__text">среднее кол-во комментариев</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
     <section class="section">
       <div class="section__head">
         <h3 class="section__title">Активность аудитории</h3>
@@ -161,9 +98,6 @@
         </div>
       </div>
     </section>
-    <div class="graph-wrapper">
-      <canvas id="demo"></canvas>
-    </div>
     <section class="section">
       <div class="section__head">
         <h3 class="section__title">Динамика аудитории</h3>
@@ -185,13 +119,23 @@
         <h3 class="section__title">Подписки/отписки</h3>
         <p class="section__caption">График отображает увеличение/уменьшение количества подписчиков за конкретный период</p>
         <div class="section__button-wrapper button-group">
-          <button class="button button--accent-1 button-group__item">Месяц</button>
-          <button class="button button--accent-1 button-group__item">Год</button>
-          <button class="button button--accent-1 button-group__item">Все время</button>
+          <button class="button button--accent-2 button-group__item">Месяц</button>
+          <button class="button button--accent-2 button-group__item">Год</button>
+          <button class="button button--accent-2 button-group__item">Все время</button>
         </div>
       </div>
       <div class="section__main">
         <div class="graph-wrapper graph-wrapper--with-shadow">
+          <div class="graph-custom-legend graph-custom-legend--follow-unfollow">
+            <div class="graph-custom-legend__item">
+              <div class="graph-custom-legend__circle accent-2"></div>
+              <span>подписки</span>
+            </div>
+            <div class="graph-custom-legend__item">
+              <div class="graph-custom-legend__circle black"></div>
+              <span>отписки</span>
+            </div>
+          </div>
           <canvas id="follow_unfollow"></canvas>
         </div>
       </div>
