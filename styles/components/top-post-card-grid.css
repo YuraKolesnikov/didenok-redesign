@@ -14,3 +14,10 @@
 		grid-gap: 20px;
 	}
 }
+
+@media (max-width: 576px) {
+	.top-post-card-grid {
+		grid-template-columns: none;
+		grid-gap: 20px;
+	}
+}

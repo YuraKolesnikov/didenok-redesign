@@ -55,27 +55,42 @@
 
 @media (max-width: 992px) {
 	.top-post-card {
-		height: 239px;
 		width: 239px;
-	}
-
-	.top-post-card__stats {
-		padding: 20px;
-	}
-
-	.top-post-card__stats-number {
-		font-size: 20px;
-		line-height: 28px;
+		height: 239px;
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+	.top-post-card {
+		height: 164px;
+		width: 344px;
+		box-shadow: var(--box-shadow-mobile);
+	}
+
+	.top-post-card__stats {
+		border-radius: 20px;
+		padding: 20px;
+		height: 164px;
+		width: 172px;
+		left: auto;
+		right: 0;
+		z-index: 1;
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+
 	.top-post-card__stats-name {
 		font-size: 11px;
+		line-height: 13px;
 	}
 
 	.top-post-card__stats-number {
 		font-size: 14px;
 		line-height: 18px;
+	}
+
+	.top-post-card__img {
+		width: 195px;
+		height: 164px;
 	}
 }

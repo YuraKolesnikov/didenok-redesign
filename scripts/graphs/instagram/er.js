@@ -6,7 +6,7 @@ const data_er = {
 			label: 'ER',
 			// data
 			data: [3, 8],
-			backgroundColor: ['rgba(26, 26, 50, 100%)', 'rgba(10.2%, 10.2%, 19.6%, 0%)'],
+			backgroundColor: ['rgba(26, 26, 50, 100%)', '#F9F9F9'],
 		}
 	]
 };
@@ -28,6 +28,12 @@ const config_er = {
 			},
 			tooltip: {
 				enabled: false,
+			}
+		},
+		elements: {
+			center: {
+				text: '30%',
+				color: 'teal'
 			}
 		}
 	},
