@@ -1,0 +1,73 @@
+.channel-avg {
+	--accent-color: teal;
+	max-width: 840px;
+	width: 100%;
+	/* Компенсация margin-top в .section__main без написания дополнительных стилей для этой секции */
+	margin: -50px auto 0;
+}
+
+.channel-avg__data {
+	font-family: var(--font-primary-bold);
+	height: 61px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.channel-avg__data-top {
+	color: var(--dark-blue);
+}
+
+.channel-avg__data-bottom {
+	color: var(--gray);
+}
+
+.channel-avg__main {
+	box-shadow: var(--box-shadow);
+	width: 100%;
+	position: relative;
+	background-color: #D1D1D6;
+	height: 19px;
+	border-radius: 28px;
+}
+
+.channel-avg__bar {
+	background-color: var(--accent-color);
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 74.76%;
+	height: 100%;
+	border-radius: 28px;
+	transition: width var(--animation);
+}
+
+.channel-avg__icon {
+	fill: none;
+	margin-right: 10px;
+	width: 22px;
+	height: 20px;
+}
+
+.channel-avg__icon--like {
+	stroke: var(--accent-color);
+	transform: translateY(2px);
+}
+
+.channel-avg__icon--dislike {
+	stroke: var(--dark-blue);
+	transform: rotate(180deg) translateY(-3px) scaleX(-1);
+}
+
+@media (max-width: 768px) {
+	.channel-avg {
+		margin: -20px auto 0;
+	}
+
+	.channel-avg__main {
+		box-shadow: var(--box-shadow-mobile);
+	}
+}

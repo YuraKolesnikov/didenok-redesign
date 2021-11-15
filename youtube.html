@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="./styles/components/info-section.css">
   <link rel="stylesheet" href="./styles/components/graphs.css">
   <link rel="stylesheet" href="./styles/components/table.css">
+  <link rel="stylesheet" href="./styles/components/channel-avg.css">
   <link rel="stylesheet" href="./styles/pages/instagram.css">
   <link rel="stylesheet" href="./styles/pages/youtube.css">
 </head>
@@ -137,6 +138,39 @@
                 <span class="stats-card__text">среднее кол-во комментариев</span>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section__head">
+        <h3 class="section__title">Средние показатели видео на канале</h3>
+        <p class="section__caption">
+          Информация получена из последних 20 видео, не считая последнего видео
+        </p>
+      </div>
+      <div class="section__main">
+        <div class="channel-avg">
+          <div class="channel-avg__data channel-avg__data-top">
+            <span>
+              <svg class="channel-avg__icon channel-avg__icon--like">
+                <use xlink:href="./assets/icons.svg#like"></use>
+              </svg>
+              999 999 999
+            </span>
+            <span>
+              <svg class="channel-avg__icon channel-avg__icon--dislike">
+                <use xlink:href="./assets/icons.svg#like"></use>
+              </svg>
+              999 999 999
+            </span>
+          </div>
+          <div class="channel-avg__main">
+            <div class="channel-avg__bar"></div>
+          </div>
+          <div class="channel-avg__data channel-avg__data-bottom">
+            <span>74,76%</span>
+            <span>16,24%</span>
           </div>
         </div>
       </div>

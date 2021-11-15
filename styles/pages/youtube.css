@@ -10,3 +10,7 @@
 .page-youtube .table {
 	--highlight-color: var(--main-color);
 }
+
+.page-youtube .channel-avg {
+	--accent-color: var(--main-color);
+}
