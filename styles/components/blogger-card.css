@@ -1,0 +1,148 @@
+.blogger-card {
+  box-shadow: var(--box-shadow);
+  font-family: var(--font-secondary);
+  border-radius: 15px;
+  color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 20px 30px;
+  cursor: pointer;
+  max-width: 780px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.blogger-card__left {
+  display: flex;
+  align-items: center;
+  min-width: 275px;
+  margin-right: 10px;
+}
+
+.blogger-card__circle {
+  background-color: var(--gray-light);
+  display: block;
+  margin-right: 16px;
+  height: 7px;
+  min-height: 7px;
+  width: 7px;
+  min-width: 7px;
+  border-radius: 50%;
+}
+
+.blogger-card__name {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  min-width: 120px;
+}
+
+.blogger-card__numbers {
+  display: flex;
+  align-items: center;
+}
+
+.blogger-card__number {
+  color: var(--black);
+  font-weight: 600;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.blogger-card__number span {
+  font-size: 22px;
+  line-height: 30px;
+  width: 130px;
+}
+
+.blogger-card__number .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.blogger-card__number--youtube .icon {
+  fill: var(--accent-2);
+}
+
+.blogger-card__number--instagram .icon {
+  fill: var(--accent-1);
+}
+
+.blogger-card__more {
+  font-family: var(--font-primary);
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  letter-spacing: initial;
+}
+
+.blogger-card__more .icon {
+  fill: var(--gray);
+  transform: rotate(-90deg) translate(-1px, 5px);
+  height: 4px;
+  width: 8px;
+}
+
+@media (max-width: 992px) {
+  .blogger-card__left {
+    max-width: 75%;
+  }
+  .blogger-card__name {
+    max-width: 100%;
+    line-height: 24px;
+  }
+  .blogger-card__numbers {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blogger-card {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  .blogger-card__numbers {
+    order: 3;
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .blogger-card__number {
+    margin: 0 15px 0 0;
+  }
+
+  .blogger-card__more {
+    order: 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .blogger-card__left {
+    max-width: 50%;
+  }
+
+  .blogger-card__numbers {
+    justify-content: space-between;
+  }
+
+  .blogger-card__number {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .blogger-card__number span {
+    width: auto;
+  }
+
+  .blogger-card__more {
+    display: none;
+  }
+}
