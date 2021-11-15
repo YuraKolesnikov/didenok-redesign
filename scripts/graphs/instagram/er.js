@@ -30,12 +30,6 @@ const config_er = {
 				enabled: false,
 			}
 		},
-		elements: {
-			center: {
-				text: '30%',
-				color: 'teal'
-			}
-		}
 	},
 };
 

@@ -1,11 +1,14 @@
 .graph-wrapper {
 	max-width: 976px;
 	margin: auto;
-	position: relative;
 }
 
 .graph-wrapper--er {
 	max-width: 350px;
+}
+
+.graph-data-wrapper {
+	position: relative;
 }
 
 .graph-wrapper__er-data {
@@ -18,12 +21,12 @@
 	max-width: 400px;
 	width: 100%;
 	top: 50%;
-	transform: translateY(-60%);
+	transform: translateY(-45%);
 }
 
 .graph-wrapper__er-number {
 	font-size: 130px;
-	line-height: 130px;
+	line-height: 108px;
 }
 
 .graph-wrapper__er-text {
@@ -139,6 +142,10 @@
 		font-size: 40px;
 		line-height: 40px;
 	}
+
+	.graph-wrapper--er {
+		max-width: 250px;
+	}
 }
 
 @media (max-width: 576px) {
@@ -173,5 +180,9 @@
 	.graph-wrapper__er-text {
 		font-size: 24px;
 		line-height: 30px;
+	}
+
+	.graph-wrapper--er {
+		max-width: 150px;
 	}
 }
