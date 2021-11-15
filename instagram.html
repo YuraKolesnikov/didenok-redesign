@@ -155,6 +155,29 @@
     </section>
     <section class="section">
       <div class="section__head">
+        <h3 class="section__title">Демография</h3>
+        <p class="section__caption">
+          Диаграмма иллюстрирует гендерное процентное соотношение аудитории в каждом возрастном диапазоне
+        </p>
+      </div>
+      <div class="section__main">
+        <div class="graph-wrapper graph-wrapper--with-shadow">
+          <div class="graph-custom-legend graph-custom-legend--follow-unfollow">
+            <div class="graph-custom-legend__item">
+              <div class="graph-custom-legend__circle accent-1"></div>
+              <span>Женщины</span>
+            </div>
+            <div class="graph-custom-legend__item">
+              <div class="graph-custom-legend__circle black"></div>
+              <span>Мужчины</span>
+            </div>
+          </div>
+          <canvas id="demo"></canvas>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section__head">
         <h3 class="section__title">Подписки/отписки</h3>
         <p class="section__caption">График отображает увеличение/уменьшение количества подписчиков за конкретный период</p>
         <div class="section__button-wrapper button-group">
@@ -380,6 +403,7 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
   <script src="./scripts/graphs/variables_and_init.js"></script>
+  <script src="./scripts/graphs/instagram/demo.js"></script>
   <script src="./scripts/graphs/instagram/er.js"></script>
   <script src="./scripts/graphs/instagram/follow_unfollow.js"></script>
   <script src="./scripts/graphs/instagram/dynamic.js"></script>
