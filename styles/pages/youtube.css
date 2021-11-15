@@ -14,3 +14,17 @@
 .page-youtube .channel-avg {
 	--accent-color: var(--main-color);
 }
+
+.top-videos {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1600px;
+	margin: auto;
+}
+
+@media (max-width: 768px) {
+	.top-videos {
+		flex-flow: column;
+	}
+}
