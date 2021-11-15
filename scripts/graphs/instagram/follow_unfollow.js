@@ -58,3 +58,14 @@ const follow_unfollow = new Chart(
 	document.getElementById('follow_unfollow'),
 	config_follow_unfollow
 );
+
+const instagramFollowButtons = document.querySelectorAll('.js-follow-chart');
+
+instagramFollowButtons.forEach(button => {
+	button.addEventListener('click', e => {
+		const id = button.dataset.followChartBtnId;
+		follow_unfollow.data.datasets[0].data = DATA_SETS[id].follow;
+		follow_unfollow.data.datasets[1].data = DATA_SETS[id].unfollow;
+		follow_unfollow.update();
+	})
+})

@@ -71,3 +71,15 @@ const activity = new Chart(
 	document.getElementById('activity'),
 	config_activity
 );
+
+const youtubeActivityButtons = document.querySelectorAll('.js-activity-chart');
+
+youtubeActivityButtons.forEach(button => {
+	button.addEventListener('click', e => {
+		const id = button.dataset.activityChartBtnId;
+		console.log(id);
+		activity.data.datasets[0].data = DATA_SETS[id].follow;
+		activity.data.datasets[1].data = DATA_SETS[id].unfollow;
+		activity.update();
+	})
+})

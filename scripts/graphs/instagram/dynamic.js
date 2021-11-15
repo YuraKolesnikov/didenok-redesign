@@ -62,3 +62,13 @@ const dynamic = new Chart(
 	document.getElementById('dynamic'),
 	config_dynamic
 );
+
+const instagramDynamicButtons = document.querySelectorAll('.js-dynamic-chart');
+
+instagramDynamicButtons.forEach(button => {
+	button.addEventListener('click', e => {
+		const id = button.dataset.dynamicChartBtnId;
+		dynamic.data.datasets[0].data = DATA_SETS[id].follow;
+		dynamic.update();
+	})
+})

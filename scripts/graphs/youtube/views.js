@@ -46,3 +46,13 @@ const config_views = {
 };
 
 const views = new Chart(document.getElementById('views'), config_views);
+
+const youtubeViewsButtons = document.querySelectorAll('.js-views-chart');
+
+youtubeViewsButtons.forEach(button => {
+	button.addEventListener('click', e => {
+		const id = button.dataset.viewsChartBtnId;
+		views.data.datasets[0].data = DATA_SETS[id].follow;
+		views.update();
+	})
+})
