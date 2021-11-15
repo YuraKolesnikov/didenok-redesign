@@ -39,7 +39,6 @@
 	content: "";
 	top: 0;
 	left: 0;
-	width: 74.76%;
 	height: 100%;
 	border-radius: 28px;
 	transition: width var(--animation);

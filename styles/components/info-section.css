@@ -4,7 +4,7 @@
 	font-family: var(--font-secondary);
 	max-width: 1150px;
 	margin: auto;
-	padding: 0 35px;
+	padding: 0 35px 35px;
 	display: flex;
 	align-items: flex-start;
 }
