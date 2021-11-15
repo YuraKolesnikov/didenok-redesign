@@ -9,42 +9,27 @@ const AGE_LABELS = [
 ]
 
 const data_demo = {
-	labels: labels,
+	labels: AGE_LABELS,
 	datasets: [
 		{
-			datalabels: {
-				// offset values from center
-				anchor: 'start',
-				align: 'right',
-				offset: 20,
-				color: '#FFFFFF'
-			},
 			borderWidth: 0,
 			borderRadius: 123,
 			borderSkipped: false,
 			label: 'MEN',
 			// data
-			data: [65, 89, 80, 45, 56, 55, 78],
-			backgroundColor: '#1A1A32',
+			data: [60, 89, 80, 55, 56, 55, 12],
 			borderColor: '#1A1A32',
-			yAxisID: 'y',
+			backgroundColor: '#1A1A32',
 		},
 		{
-			datalabels: {
-				// offset values from center
-				anchor: 'end',
-				align: 'left',
-				offset: 20,
-				color: '#FFFFFF'
-			},
 			borderWidth: 0,
 			borderRadius: 123,
 			borderSkipped: false,
-			label: 'WOMAN',
-			data: [-65, -89, -80, -45, -56, -55, -78],
-			backgroundColor: '#F22185',
+			label: 'WOMEN',
+			// data
+			data: [65, 20, 80, 45, 56, 55, 7],
 			borderColor: '#F22185',
-			yAxisID: 'y1',
+			backgroundColor: '#F22185',
 		},
 	]
 };
@@ -52,22 +37,9 @@ const data_demo = {
 const config_demo = {
 	type: 'bar',
 	data: data_demo,
-	plugins: [AGE_LABELS],
 	options: {
-		indexAxis: 'y',
 		responsive: true,
 		plugins: {
-			datalabels: {
-				formatter: function(value, context) {
-					if (value < 0) {
-						return value * -1;
-					}
-					return value
-				}
-			},
-			tooltip: {
-				enabled: false,
-			},
 			legend: {
 				display: false,
 			},
@@ -77,30 +49,16 @@ const config_demo = {
 		},
 		scales: {
 			x: {
-				ticks: {
-					display: false
-				},
 				grid: {
 					display: false,
 					drawBorder: false
 				}
 			},
 			y: {
-				ticks: {
-					display: false
-				},
 				grid: {
 					display: false,
 					drawBorder: false
-				},
-				type: 'linear',
-				position: 'left',
-			},
-			y1: {
-				display: false,
-			},
-			label: {
-				display: false,
+				}
 			},
 		}
 	},
@@ -110,4 +68,3 @@ const demo = new Chart(
 	document.getElementById('demo'),
 	config_demo
 );
-console.log(demo);

@@ -6,3 +6,7 @@
 	--accent-color: var(--main-color);
 	--avatar-bg: url('/assets/youtube.svg');
 }
+
+.page-youtube .table {
+	--highlight-color: var(--main-color);
+}

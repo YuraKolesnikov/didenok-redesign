@@ -1,4 +1,5 @@
 .table {
+	--highlight-color: teal;
 	font-family: var(--font-secondary);
 	margin: auto;
 }
@@ -7,21 +8,27 @@
 	padding: 10px 25px;
 }
 
-.table__row {
-
-}
-
-.table__row--highlighted {
-	color: var(--accent-2);
+.table__head-cell .button {
+	min-width: 140px;
 }
 
 .table__cell {
+	color: var(--dark-blue);
 	text-align: center;
   vertical-align: middle;
 	font-size: 40px;
 	line-height: 48px;
 	text-transform: uppercase;
 	padding: 25px 0;
+}
+
+.table__cell--country {
+	text-align: left;
+	padding-left: 50px;
+}
+
+.table__row--highlighted .table__cell {
+	color: var(--highlight-color);
 }
 
 @media (max-width: 768px) {
