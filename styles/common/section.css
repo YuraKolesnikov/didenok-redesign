@@ -18,7 +18,7 @@
 	line-height: 48px;
 	text-align: center;
 	text-transform: uppercase;
-	margin: 0 0 35px;
+	margin: 0 0 15px;
 	letter-spacing: 1.5px;
 }
 
@@ -27,7 +27,7 @@
 	color: var(--gray);
 	font-size: 12px;
 	line-height: 14px;
-	max-width: 430px;
+	max-width: 350px;
 	margin: auto;
 	text-align: center;
 }
@@ -37,7 +37,7 @@
 }
 
 .section__main {
-	margin-top: 70px;
+	margin-top: 45px;
 }
 
 @media (max-width: 992px) {
@@ -46,7 +46,7 @@
 	}
 
 	.section__main {
-		margin-top: 50px;
+		margin-top: 30px;
 	}
 }
 

@@ -5,6 +5,7 @@
 	--gray-light: #BABAC2;
 	--gray-background: #F9F9F9;
 	--accent-1: #BEE24D;
+	--accent-with-opacity: rgba(190, 226, 77, 0.8);
 	--accent-2: #F22185;
 	--container-max-width: 1300px;
   --animation: 0.2s ease-in-out;

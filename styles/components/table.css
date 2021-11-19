@@ -40,6 +40,10 @@
 	.table__cell {
 		font-size: 18px;
 		line-height: 23px;
-		padding: 10px 0;
+		padding: 10px 25px;
+	}
+
+	.table__head-cell .button {
+		min-width: 100px;
 	}
 }

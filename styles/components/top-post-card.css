@@ -12,11 +12,10 @@
 .top-post-card:hover .top-post-card__stats {
 	z-index: 10;
 	opacity: 1;
-	transform: translate3d(0, 0, 0);
 }
 
 .top-post-card__stats {
-	background-color: var(--accent-1);
+	background-color: var(--accent-with-opacity);
 	padding: 36px 26px;
 	position: absolute;
 	left: 0;
@@ -28,7 +27,6 @@
 	justify-content: space-between;
 	opacity: 0;
 	z-index: -1;
-	transform: translate3d(0, 50%, 0);
 	transition: opacity var(--animation), transform var(--animation);
 }
 
@@ -48,7 +46,7 @@
 
 .top-post-card__stats-number {
 	font-family: var(--font-secondary);
-	color: var(--dark-blue);
+	color: #000000;
 	font-size: 30px;
 	line-height: 38px;
 }

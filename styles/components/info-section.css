@@ -57,6 +57,7 @@
 	color: var(--dark-blue);
 	font-size: 40px;
 	line-height: 48px;
+	text-align: right;
 	text-transform: uppercase;
 	margin-bottom: 30px;
 }
