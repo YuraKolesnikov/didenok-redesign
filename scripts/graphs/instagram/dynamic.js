@@ -39,6 +39,10 @@ const config_dynamic = {
 		},
 		scales: {
 			x: {
+				title: {
+					display: true,
+					text: 'LOL',
+				},
 				grid: {
 					display: false,
 					drawBorder: false
@@ -46,7 +50,8 @@ const config_dynamic = {
 			},
 			y: {
 				title: {
-					display: false,
+					display: true,
+					text: 'KEK',
 				},
 				grid: {
 					display: false,

@@ -49,12 +49,20 @@ const config_demo = {
 		},
 		scales: {
 			x: {
+				title: {
+					display: true,
+					text: 'LOL',
+				},
 				grid: {
 					display: false,
 					drawBorder: false
 				}
 			},
 			y: {
+				title: {
+					display: true,
+					text: 'KEK',
+				},
 				grid: {
 					display: false,
 					drawBorder: false

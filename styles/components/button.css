@@ -7,6 +7,11 @@
 	text-align: center;
 	border-radius: 60px;
 	cursor: pointer;
+	transition: box-shadow var(--animation);
+}
+
+.button:hover {
+	box-shadow: var(--box-shadow-mobile);
 }
 
 .button--accent-1 {
