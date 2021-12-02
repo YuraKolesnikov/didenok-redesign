@@ -19,9 +19,9 @@
 	align-items: center;
 	position: absolute;
 	max-width: 400px;
-	width: 100%;
+	width: 50%;
 	top: 50%;
-	transform: translateY(-45%);
+	transform: translateY(-45%) translateX(50%);
 }
 
 .graph-wrapper__er-number {
