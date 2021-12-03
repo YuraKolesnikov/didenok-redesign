@@ -1,3 +1,7 @@
+const BORDER_COLOR = '#F9F9F9';
+const BORDER_COLOR_ACCENT = '#1A1A32'
+const BORDER_COLOR_HOVER = '#E0E0E0';
+
 const data_er = {
 	datasets: [
 		{
@@ -6,7 +10,7 @@ const data_er = {
 			label: 'ER',
 			// data
 			data: [3, 8],
-			backgroundColor: ['rgba(26, 26, 50, 100%)', '#F9F9F9'],
+			backgroundColor: [BORDER_COLOR_ACCENT, BORDER_COLOR],
 		}
 	]
 };

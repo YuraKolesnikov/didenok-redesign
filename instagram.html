@@ -154,7 +154,7 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section js-er-section">
       <div class="section__main">
         <div class="graph-wrapper graph-wrapper--er">
           <div class="graph-data-wrapper">
@@ -480,5 +480,15 @@
   <script src="./scripts/graphs/instagram/reactions.js"></script>
   <script src="./scripts/dropdown.js"></script>
   <script src="./scripts/hamburger.js"></script>
+  <script>
+    const erWrapper = document.querySelector('.js-er-section');
+    erWrapper.addEventListener('mouseenter', e => {
+      if (!erWrapper.classList.contains('er-section--hovered')) {
+        er.config._config.data.datasets[0].backgroundColor = [BORDER_COLOR_ACCENT, BORDER_COLOR_HOVER];
+        er.update();
+        erWrapper.classList.add('er-section--hovered');
+      }
+    })
+  </script>
 </body>
 </html>
